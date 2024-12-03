@@ -4,7 +4,7 @@
 ### Cristian Molina Muñoz
 -----
 
-itch.io link -> https://crismo04.itch.io/tic-tac-toe-cristian-molina
+## itch.io link -> https://crismo04.itch.io/tic-tac-toe-cristian-molina
 
 ## WORK DONE:
 

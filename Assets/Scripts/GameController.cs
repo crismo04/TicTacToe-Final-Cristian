@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour
     public Player playerO;
     public PlayerColor activePlayerColor;
     public PlayerColor inactivePlayerColor;
+    public GameObject startInfo;
 
     private string playerSide;
     private int moveCount;
@@ -68,6 +69,7 @@ public class GameController : MonoBehaviour
     {
         SetBoardInteractable(true);
         SetPlayerButtons(false);
+        startInfo.SetActive(false);
     }
 
     public string GetPlayerSide()
@@ -95,7 +97,6 @@ public class GameController : MonoBehaviour
         {
             GameOver(playerSide);
         }
-
         else if (buttonList[1].text == playerSide && buttonList[4].text == playerSide && buttonList[7].text == playerSide)
         {
             GameOver(playerSide);
@@ -165,6 +166,7 @@ public class GameController : MonoBehaviour
         restartButton.SetActive(false);
         SetPlayerButtons(true);
         SetPlayerColorsInactive();
+        startInfo.SetActive(true);
 
         for (int i = 0; i < buttonList.Count; i++)
         {
